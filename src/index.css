@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SRM DCC Portal Design System
+   Navy Blue #1E3A5F, Amber Gold #F5A623, clean whites
+   All colors in HSL format
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 213 54% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 54% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 54% 20%;
+
+    /* Navy Blue - Primary */
+    --primary: 213 54% 24%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Light Navy for secondary */
+    --secondary: 213 30% 94%;
+    --secondary-foreground: 213 54% 24%;
+
+    --muted: 213 20% 95%;
+    --muted-foreground: 213 20% 45%;
+
+    /* Amber Gold - Accent */
+    --accent: 39 91% 55%;
+    --accent-foreground: 213 54% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 20% 88%;
+    --input: 213 20% 88%;
+    --ring: 213 54% 24%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 213 54% 20%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 39 91% 55%;
+    --sidebar-primary-foreground: 213 54% 15%;
+    --sidebar-accent: 213 54% 28%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 213 54% 28%;
+    --sidebar-ring: 39 91% 55%;
+
+    /* Custom gradients and shadows */
+    --gradient-primary: linear-gradient(135deg, hsl(213 54% 24%), hsl(213 54% 32%));
+    --gradient-accent: linear-gradient(135deg, hsl(39 91% 55%), hsl(39 91% 65%));
+    --shadow-card: 0 4px 6px -1px hsl(213 54% 24% / 0.1), 0 2px 4px -2px hsl(213 54% 24% / 0.1);
+    --shadow-elevated: 0 10px 15px -3px hsl(213 54% 24% / 0.1), 0 4px 6px -4px hsl(213 54% 24% / 0.1);
+
+    /* Chart colors */
+    --chart-1: 213 54% 24%;
+    --chart-2: 39 91% 55%;
+    --chart-3: 160 60% 45%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 350 80% 60%;
+  }
+
+  .dark {
+    --background: 213 54% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 213 54% 14%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 213 54% 14%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 39 91% 55%;
+    --primary-foreground: 213 54% 10%;
+
+    --secondary: 213 40% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 213 40% 18%;
+    --muted-foreground: 213 20% 65%;
+
+    --accent: 39 91% 55%;
+    --accent-foreground: 213 54% 10%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 40% 22%;
+    --input: 213 40% 22%;
+    --ring: 39 91% 55%;
+
+    --sidebar-background: 213 54% 8%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 39 91% 55%;
+    --sidebar-primary-foreground: 213 54% 10%;
+    --sidebar-accent: 213 54% 16%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 213 54% 16%;
+    --sidebar-ring: 39 91% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(213 54% 32%));
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, hsl(var(--accent)), hsl(39 91% 65%));
+  }
+
+  .shadow-card {
+    box-shadow: 0 4px 6px -1px hsl(var(--primary) / 0.1), 0 2px 4px -2px hsl(var(--primary) / 0.1);
+  }
+
+  .shadow-elevated {
+    box-shadow: 0 10px 15px -3px hsl(var(--primary) / 0.1), 0 4px 6px -4px hsl(var(--primary) / 0.1);
+  }
+}
