@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+# Top MNC List
 
-## Project info
+A college workshop project website that explains the campus placement process and highlights top recruiting companies. Built to present the placement flow clearly and give students a quick view of leading employers.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## What This Site Covers
+- Step-by-step placement process overview
+- Eligibility and key stages (registration, tests, interviews)
+- Top recruiting companies list
+- Clean, student-friendly UI for quick understanding
 
-## How can I edit this code?
+## Tech Stack
+- Vite
+- React + TypeScript
+- Tailwind CSS
+- shadcn-ui
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### 1) Install dependencies
+```bash
+npm install
+```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### 2) Configure environment (optional)
+If you are connecting Supabase, create `.env.local` and add:
+```
+VITE_SUPABASE_URL=your_project_url
+VITE_SUPABASE_ANON_KEY=your_anon_key
+```
+If you are not using Supabase, you can skip this step.
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 3) Run locally
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open `http://localhost:5173/companies`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Scripts
+- `npm run dev` Start dev server
+- `npm run build` Production build
+- `npm run preview` Preview production build
+- `npm run lint` Lint code
+- `npm run test` Run tests
 
-**Use GitHub Codespaces**
+## Project Structure
+- `src/pages` Routes and page-level UI
+- `src/hooks` Data fetching hooks
+- `src/services` Data services
+- `src/lib` Client setup and shared utils
+- `public` Static assets
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Notes
+- This project was created during a college workshop.
+- Content focuses on placement guidance and company listings.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## License
+Specify your license here.
