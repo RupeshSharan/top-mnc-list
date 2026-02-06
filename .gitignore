@@ -37,5 +37,8 @@ Thumbs.db
 *.sln
 *.sw?
 
+# Tooling
+/.lovable/
+
 # Misc
 *.local
