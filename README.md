@@ -53,6 +53,3 @@ Open `http://localhost:5173/companies`
 ## Notes
 - This project was created during a college workshop.
 - Content focuses on placement guidance and company listings.
-
-## License
-Specify your license here.
